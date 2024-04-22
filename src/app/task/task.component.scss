@@ -1,0 +1,16 @@
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: hsl(220, 98%, 61%);
+    }
+  }
+}

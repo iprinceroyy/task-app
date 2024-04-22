@@ -1,0 +1,59 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-container {
+  position: absolute;
+  top: 25vh;
+  width: min(83%, 550px);
+  color: hsl(235, 19%, 35%);
+  background-color: white;
+  padding-block: 1.5rem;
+  padding-inline: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1rem 3rem -2rem hsl(235, 19%, 35%);
+
+  > p {
+    margin-block-end: 1rem;
+
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  .dates-container {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    color: hsl(235, 19%, 35%);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: rgba(hsl(220, 98%, 61%), 0.5);
+    border-radius: 5px;
+    padding-inline: 0.5rem;
+    padding-block: 0.3rem;
+
+    img {
+      max-width: 1.9rem;
+    }
+  }
+}

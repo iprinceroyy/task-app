@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-list-container {
+  position: absolute;
+  top: 25vh;
+  width: min(83%, 550px);
+  color: hsl(235, 19%, 35%);
+  background-color: white;
+  padding-block: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1rem 3rem -2rem hsl(235, 19%, 35%);
+
+  .link-container {
+    padding-inline: 1.5rem;
+    padding-block-start: 1rem;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.89rem;
+      font-weight: 600;
+      background-color: rgba(hsl(220, 98%, 61%), 0.5);
+      border-radius: 5px;
+      padding-inline: 0.7rem;
+      padding-block: 0.5rem;
+    }
+  }
+}
+
+.task-list-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding-block-end: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.5rem;
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+}

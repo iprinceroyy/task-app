@@ -1,0 +1,16 @@
+<div class="details-container">
+  <p><span>Task title: </span>{{ task?.taskName }}</p>
+  <p><span>Description: </span>{{ task?.description }}</p>
+  <div class="dates-container">
+    <p><span>Create date: </span>{{ task?.createdDate }}</p>
+    <p><span>Last modified: </span>{{ task?.modifiedDate }}</p>
+  </div>
+  <div class="btns-container">
+    <button type="button">
+      <img src="../../assets/edit.png" alt="" />
+    </button>
+    <button type="button" (click)="handleDelete(task?.id)">
+      <img src="../../assets/delete.png" alt="" />
+    </button>
+  </div>
+</div>

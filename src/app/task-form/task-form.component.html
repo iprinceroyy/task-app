@@ -1,0 +1,25 @@
+<!-- <p>task-form works!</p> -->
+<div class="form-container">
+  <form [formGroup]="applyForm" (submit)="submitTask()">
+    <div class="input-container">
+      <label for="task-name">Title</label>
+      <input
+        id="task-name"
+        type="text"
+        placeholder="Enter task title here"
+        formControlName="taskName"
+      />
+    </div>
+
+    <div class="input-container">
+      <label for="description">Description</label>
+      <textarea
+        id="description"
+        placeholder="Enter task description here"
+        formControlName="description"
+      ></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

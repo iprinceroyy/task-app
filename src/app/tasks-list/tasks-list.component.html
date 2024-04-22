@@ -1,0 +1,11 @@
+<!-- <p>tasks-list works!</p> -->
+<div class="task-list-container">
+  <div class="task-list-title">
+    <p>Title</p>
+    <p>Description</p>
+  </div>
+  <app-task *ngFor="let task of taskList" [task]="task"></app-task>
+  <div class="link-container">
+    <a [routerLink]="['/create']">Add new task</a>
+  </div>
+</div>
