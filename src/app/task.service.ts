@@ -21,14 +21,27 @@ export class TaskService {
   }
 
   addTask(taskName: string, description: string) {
-    this.taskList.push({
+    let tasksList = this.getAllTasks();
+    tasksList.push({
       id: Math.floor(Math.random() * 1000),
       taskName: taskName,
       description: description,
       modifiedDate: new Date().toDateString(),
       createdDate: new Date().toDateString(),
     });
-    this.saveTask(this.taskList);
+    this.saveTask(tasksList);
+  }
+
+  editTask(id: number | undefined, description: string) {
+    let tasks = this.getAllTasks();
+    if (id) {
+      const index = tasks.findIndex((task) => task.id === id);
+      if (index !== -1) {
+        console.log(tasks[index]);
+        tasks[index].description = description;
+        this.saveTask(tasks);
+      }
+    }
   }
 
   deleteTask(id?: number) {
